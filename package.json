@@ -1,0 +1,21 @@
+{
+  "name": "@villagekit/gridjig-koi",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "clean": "rm -rf assemblies bom dxfs openscad.* printme.html readme.html readme.md stls tmp",
+    "dev": "OPENSCADPATH=$(pwd) openscad scad/main.scad",
+    "build": "OPENSCADPATH=$(pwd) python3 ./NopSCADlib/scripts/make_all.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/villagekit/gridjig-koi.git"
+  },
+  "keywords": [],
+  "author": "Village Kit Limited",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/villagekit/gridjig-koi/issues"
+  },
+  "homepage": "https://github.com/villagekit/gridjig-koi#readme"
+}

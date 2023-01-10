@@ -1,0 +1,3 @@
+[submodule "NopSCADlib"]
+	path = NopSCADlib
+	url = git@github.com:villagekit/NopSCADlib
