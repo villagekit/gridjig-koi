@@ -15,6 +15,14 @@ Inspiration: https://sunrise.social/@villagekit/109560883732040486
 1. [Main Assembly](#main_assembly)
 
 
+Here's a rough sketch with my understanding for how this jig may be used:
+
+<img alt="Rough sketch of jig" src="./sketch.jpg" height="512px" />
+
+The “positioner” is a flat bar with point-y etches in the side, laying on a table with a proto grid beam about to be drilled. A point-y bolt is in an initial pre-drilled hole on the proto grid beam, in the first etch on the positioner. A drill press is about to drill in the next hole.
+
+After the hole is drilled, the point-y bolt will be pulled out of the etch, the beam slid forward until the point-y bolt is pushed into the next etch, then the next hole will be drilled. The process repeats until all etches are used to drill holes in the corresponding positions.
+
 
 <span></span>
 [Top](#TOP)
