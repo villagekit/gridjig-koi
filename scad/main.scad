@@ -31,6 +31,8 @@ positioner_length = jig_size_in_grid_units * grid_unit_in_mm;
 positioner_width = 20;
 // positioner_height = (1 / 2) * (gridbeam_unit + gridbeam_hole_diameter);
 
+positioner_point_width = gridbeam_hole_diameter;
+
 //! The main plate of the jig, which aligns the hole positions to the beam.
 module positioner_dxf() {
   dxf("positioner");
@@ -53,13 +55,14 @@ module positioner_dxf() {
         (1/2) * grid_unit_in_mm,
       ])
       rotate([0, 0, 45])
-      square(gridbeam_hole_diameter, center=true);
+      square(positioner_point_width, center=true);
     }
   }
 }
 
 //! Main assembly
 module main_assembly()
+pose([0, 0, 0], [0, 0, 0]) // pose for readme
 assembly("main") {
   translate([0, 0, (1/2) * sheet_thickness(positioner_sheet_type)])
   render_2D_sheet(positioner_sheet_type)
